@@ -1,5 +1,6 @@
 ---
 title:zk
+feed:show
 ---
 # ZK
 
