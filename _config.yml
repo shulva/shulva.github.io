@@ -67,7 +67,7 @@ footer:
 collections:
   notes:
     output: true
-    permalink: /:collection/:name
+    permalink: /notes/:path
 
 # Defaults
 defaults:
