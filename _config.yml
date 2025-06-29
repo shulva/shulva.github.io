@@ -35,10 +35,10 @@ preferences:
     enabled: true
 
 # Site Configuration
-title: "Your Site Title"
-heading: "Your Name"
-description: "A brief description of your site"
-url: "https://yoursite.com"
+title: "shulva's note"
+heading: "have a nice day"
+description: "just for fun"
+url: "https://shulva.github.io"
 baseurl: ""
 
 # Asset Configuration
