@@ -1,5 +1,7 @@
+---
+title:zk
+---
 # ZK
-#zk
 
 > [!NOTE] zk 卡片本身结构
 > ![complete-zettel](../../../files/images/zk/complete-zettel.png)
