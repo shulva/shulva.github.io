@@ -1,29 +1,26 @@
 [
   {
-    "page": "_notes/zk/zk/10-Algorithms/10 (Algorithm).md",
-    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf",
-    "kind": "document",
+    "page": "_notes/zk/zk/1-ZK/1 (ZK).md",
+    "target": "../../../files/images/zk/2020-08-13_folgezettel-sequence.png",
+    "kind": "image",
     "urls": [
-      "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf#page=5",
-      "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf#page=9",
-      "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf#page=15",
-      "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf#page=19"
+      "../../../files/images/zk/2020-08-13_folgezettel-sequence.png"
     ]
   },
   {
-    "page": "_notes/zk/zk/10-Algorithms/10 (Algorithm).md",
-    "target": "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf",
-    "kind": "document",
+    "page": "_notes/zk/zk/1-ZK/1 (ZK).md",
+    "target": "../../../files/images/zk/complete-zettel.png",
+    "kind": "image",
     "urls": [
-      "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf#page=27&selection=180,0,182,2"
+      "../../../files/images/zk/complete-zettel.png"
     ]
   },
   {
     "page": "_notes/zk/zk/1-ZK/1-b (排版参考).md",
-    "target": "../../../files/images/zk/intel-manual.png",
+    "target": "../../../files/images/zk/clrs-design.png",
     "kind": "image",
     "urls": [
-      "../../../files/images/zk/intel-manual.png"
+      "../../../files/images/zk/clrs-design.png"
     ]
   },
   {
@@ -36,26 +33,29 @@
   },
   {
     "page": "_notes/zk/zk/1-ZK/1-b (排版参考).md",
-    "target": "../../../files/images/zk/clrs-design.png",
+    "target": "../../../files/images/zk/intel-manual.png",
     "kind": "image",
     "urls": [
-      "../../../files/images/zk/clrs-design.png"
+      "../../../files/images/zk/intel-manual.png"
     ]
   },
   {
-    "page": "_notes/zk/zk/1-ZK/1 (ZK).md",
-    "target": "../../../files/images/zk/complete-zettel.png",
-    "kind": "image",
+    "page": "_notes/zk/zk/10-Algorithms/10 (Algorithm).md",
+    "target": "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf",
+    "kind": "document",
     "urls": [
-      "../../../files/images/zk/complete-zettel.png"
+      "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf#page=27&selection=180,0,182,2"
     ]
   },
   {
-    "page": "_notes/zk/zk/1-ZK/1 (ZK).md",
-    "target": "../../../files/images/zk/2020-08-13_folgezettel-sequence.png",
-    "kind": "image",
+    "page": "_notes/zk/zk/10-Algorithms/10 (Algorithm).md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf",
+    "kind": "document",
     "urls": [
-      "../../../files/images/zk/2020-08-13_folgezettel-sequence.png"
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf#page=15",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf#page=19",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf#page=5",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf#page=9"
     ]
   },
   {
@@ -104,6 +104,14 @@
     ]
   },
   {
+    "page": "_notes/zk/zk/10-Algorithms/10-a-1 (复杂度分析).md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=22"
+    ]
+  },
+  {
     "page": "_notes/zk/zk/10-Algorithms/10-b （动态规划）.md",
     "target": "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf",
     "kind": "document",
@@ -121,6 +129,22 @@
     ]
   },
   {
+    "page": "_notes/zk/zk/10-Algorithms/10-c （排序）.md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=77"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-c （排序）.md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=56"
+    ]
+  },
+  {
     "page": "_notes/zk/zk/10-Algorithms/10-c-1 (起泡排序).md",
     "target": "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf",
     "kind": "document",
@@ -130,11 +154,449 @@
     ]
   },
   {
+    "page": "_notes/zk/zk/10-Algorithms/10-c-1 (起泡排序).md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=72",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=74",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=75",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=76",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=77"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-c-1 (起泡排序).md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf",
+    "kind": "image",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=72"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-c-1 (起泡排序).md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=31"
+    ]
+  },
+  {
     "page": "_notes/zk/zk/10-Algorithms/10-c-2 （归并排序）.md",
     "target": "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf",
     "kind": "document",
     "urls": [
       "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf#page=32&selection=15,0,15,4"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-c-2 （归并排序）.md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=79",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=82",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=85",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=88"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-c-2 （归并排序）.md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf",
+    "kind": "image",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=82"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-c-2 （归并排序）.md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=52&selection=93,0,93,3"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-c-3 (选择排序）.md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=31",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=34",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=36",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=37"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-c-3 (选择排序）.md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf",
+    "kind": "image",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=33&selection=10,0,10,3"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-c-4 (插入排序).md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=44",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=46",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=47"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-c-4 (插入排序).md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf",
+    "kind": "image",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=44"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-d (抽象数据结构）.md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf",
+    "kind": "image",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=3"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-d-1 (Vector).md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=11",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=13",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=17",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=19",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=20",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=21",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=24",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=25",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=26",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=27",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=30",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=32",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=34",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=37",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=38",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=39",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=43",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=50&selection=65,0,65,5",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=53",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=56",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=58",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=61",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=66",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=7"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-d-1 (Vector).md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf",
+    "kind": "image",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=6"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-d-1 (Vector).md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=69"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-d-2 (Bitmap).md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=102",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=92",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=95",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=97"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-d-2 (Bitmap).md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf",
+    "kind": "image",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=91"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-d-3 (List).md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=6"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-d-3 (List).md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=11",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=13",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=15",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=18",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=2",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=21",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=22",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=24",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=38",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=4",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=6",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=61",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=74",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=8"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-d-3 (List).md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf",
+    "kind": "image",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=3"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-d-3 (List).md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=2"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-d-4 (Stack).md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=21",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=24",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=28",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=29",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=3",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=31",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=34",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=39",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=4",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=51",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=57",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=61",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=63",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=65",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=69",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=70",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=72",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=74",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=86",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=87",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=90",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=93"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-d-4 (Stack).md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf",
+    "kind": "image",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=10",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=2",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=37",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=58",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=68",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=84"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-d-5 (Queue).md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=78",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=80",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=81",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=95",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=99"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-d-5 (Queue).md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf",
+    "kind": "image",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=76",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=95",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=98"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-d-6 (Tree).md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=10",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=102",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=108",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=11",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=16",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=17",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=18",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=19",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=21",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=22",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=24",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=25",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=3",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=35",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=37",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=39",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=43",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=45",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=47",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=48",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=5",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=51",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=54",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=59",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=6",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=61",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=66",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=68",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=69",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=7",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=72",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=73",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=77",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=82",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=83",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=92",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=94",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=97"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-d-6 (Tree).md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf",
+    "kind": "image",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=114",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=119",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=15",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=3",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=33",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=41",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=57",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=86"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-e (图).md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=11",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=12",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=13",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=15",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=16",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=17",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=19",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=21",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=24",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=27",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=29",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=3",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=32",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=5",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=7",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=8"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-e (图).md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf",
+    "kind": "image",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=2&selection=79,0,79,4"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-e-1 (图算法).md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=36",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=39",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=43",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=44",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=46",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=48",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=50",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=57",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=59",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=64",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=65",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=67",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=77"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-e-1 (图算法).md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf",
+    "kind": "image",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=34",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/10.Graph.pdf#page=56"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-e-1 (图算法).md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/11.Graph%20Applications.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/11.Graph%20Applications.pdf#page=10",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/11.Graph%20Applications.pdf#page=11",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/11.Graph%20Applications.pdf#page=16",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/11.Graph%20Applications.pdf#page=19",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/11.Graph%20Applications.pdf#page=22",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/11.Graph%20Applications.pdf#page=24",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/11.Graph%20Applications.pdf#page=31",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/11.Graph%20Applications.pdf#page=33",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/11.Graph%20Applications.pdf#page=43",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/11.Graph%20Applications.pdf#page=50",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/11.Graph%20Applications.pdf#page=55",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/11.Graph%20Applications.pdf#page=56",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/11.Graph%20Applications.pdf#page=6",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/11.Graph%20Applications.pdf#page=61",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/11.Graph%20Applications.pdf#page=65",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/11.Graph%20Applications.pdf#page=7",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/11.Graph%20Applications.pdf#page=73",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/11.Graph%20Applications.pdf#page=76",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/11.Graph%20Applications.pdf#page=80",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/11.Graph%20Applications.pdf#page=83",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/11.Graph%20Applications.pdf#page=9",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/11.Graph%20Applications.pdf#page=94"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-e-1 (图算法).md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/11.Graph%20Applications.pdf",
+    "kind": "image",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/11.Graph%20Applications.pdf#page=14",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/11.Graph%20Applications.pdf#page=3&selection=51,0,51,4",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/11.Graph%20Applications.pdf#page=30",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/11.Graph%20Applications.pdf#page=35",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/11.Graph%20Applications.pdf#page=58",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/11.Graph%20Applications.pdf#page=79",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/11.Graph%20Applications.pdf#page=92"
     ]
   },
   {
@@ -163,6 +625,412 @@
       "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf#page=60",
       "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf#page=70",
       "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf#page=84"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-f （递归）.md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=13",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=17",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=18"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-f （递归）.md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf",
+    "kind": "image",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=18"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/11-Arch/11(Arch).md",
+    "target": "../../../files/books/Arch/计算机组成与设计：硬件软件接口.pdf",
+    "kind": "document",
+    "urls": [
+      "../../../files/books/Arch/计算机组成与设计：硬件软件接口.pdf#page=28"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/11-Arch/11(Arch).md",
+    "target": "../../../files/slides/CS61C%2020fall/lec01.pdf",
+    "kind": "image",
+    "urls": [
+      "../../../files/slides/CS61C%2020fall/lec01.pdf#page=13"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/12-AI/12-b-2 （梯度）.md",
+    "target": "../../../files/images/AI/12-b-2-1.png",
+    "kind": "image",
+    "urls": [
+      "../../../files/images/AI/12-b-2-1.png"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/12-AI/12-b-2 （梯度）.md",
+    "target": "../../../files/images/AI/12-b-2-2.png",
+    "kind": "image",
+    "urls": [
+      "../../../files/images/AI/12-b-2-2.png"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/12-AI/12-b-2 （梯度）.md",
+    "target": "../../../files/slides/d2l/part-0_6.pdf",
+    "kind": "document",
+    "urls": [
+      "../../../files/slides/d2l/part-0_6.pdf"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/12-AI/12-b-3 （自动求导与反向传播）.md",
+    "target": "../../../files/images/AI/12-b-3-1.png",
+    "kind": "image",
+    "urls": [
+      "../../../files/images/AI/12-b-3-1.png"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/12-AI/12-b-3 （自动求导与反向传播）.md",
+    "target": "../../../files/images/AI/12-b-3-3.png",
+    "kind": "image",
+    "urls": [
+      "../../../files/images/AI/12-b-3-3.png"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/12-AI/12-b-3 （自动求导与反向传播）.md",
+    "target": "../../../files/images/AI/12-b-3-4.png",
+    "kind": "image",
+    "urls": [
+      "../../../files/images/AI/12-b-3-4.png"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/12-AI/12-b-3 （自动求导与反向传播）.md",
+    "target": "../../../files/images/AI/12-b-3-5.png",
+    "kind": "image",
+    "urls": [
+      "../../../files/images/AI/12-b-3-5.png"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/12-AI/12-b-3 （自动求导与反向传播）.md",
+    "target": "../../../files/images/AI/12-b-3-6.png",
+    "kind": "image",
+    "urls": [
+      "../../../files/images/AI/12-b-3-6.png"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/12-AI/12-b（pytorch基础操作）.md",
+    "target": "../../../files/images/AI/12-b1.png",
+    "kind": "image",
+    "urls": [
+      "../../../files/images/AI/12-b1.png"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/12-AI/12-b（pytorch基础操作）.md",
+    "target": "../../../files/slides/d2l/part-0_4.pdf",
+    "kind": "image",
+    "urls": [
+      "../../../files/slides/d2l/part-0_4.pdf#page=2"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/2-Tools/2-a (Vim).md",
+    "target": "files/slides/6.null/missing%20semester%20en.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/6.null/missing%20semester%20en.pdf#page=26&selection=73,0,73,13"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/2-Tools/2-a-1 (Practical Vim).md",
+    "target": "../../../files/books/Tools/Vim.pdf",
+    "kind": "document",
+    "urls": [
+      "../../../files/books/Tools/Vim.pdf#page=101&selection=3,3,4,2",
+      "../../../files/books/Tools/Vim.pdf#page=104&selection=3,0,3,5",
+      "../../../files/books/Tools/Vim.pdf#page=106&selection=3,0,3,14",
+      "../../../files/books/Tools/Vim.pdf#page=116&selection=75,0,75,9",
+      "../../../files/books/Tools/Vim.pdf#page=122&selection=0,0,37,2",
+      "../../../files/books/Tools/Vim.pdf#page=186&selection=113,0,131,3",
+      "../../../files/books/Tools/Vim.pdf#page=203&selection=53,0,53,16",
+      "../../../files/books/Tools/Vim.pdf#page=54",
+      "../../../files/books/Tools/Vim.pdf#page=58",
+      "../../../files/books/Tools/Vim.pdf#page=60",
+      "../../../files/books/Tools/Vim.pdf#page=67",
+      "../../../files/books/Tools/Vim.pdf#page=80",
+      "../../../files/books/Tools/Vim.pdf#page=87",
+      "../../../files/books/Tools/Vim.pdf#page=98"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/2-Tools/2-a-2-a （普通模式）.md",
+    "target": "../../../files/images/vim.gif",
+    "kind": "image",
+    "urls": [
+      "../../../files/images/vim.gif"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/2-Tools/2-a-2-b （可视模式）.md",
+    "target": "../../../files/books/Tools/Vim.pdf",
+    "kind": "document",
+    "urls": [
+      "../../../files/books/Tools/Vim.pdf#page=101&selection=3,3,4,2",
+      "../../../files/books/Tools/Vim.pdf#page=104&selection=3,0,3,5",
+      "../../../files/books/Tools/Vim.pdf#page=106&selection=3,0,3,14",
+      "../../../files/books/Tools/Vim.pdf#page=116&selection=75,0,75,9"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/2-Tools/2-a-2-c （命令行模式）.md",
+    "target": "../../../files/books/Tools/Vim.pdf",
+    "kind": "document",
+    "urls": [
+      "../../../files/books/Tools/Vim.pdf#page=116&selection=75,0,75,9",
+      "../../../files/books/Tools/Vim.pdf#page=124&selection=32,0,33,6"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/2-Tools/2-a-3-a (Vim 管理多个文件).md",
+    "target": "../../../files/books/Tools/Vim.pdf",
+    "kind": "document",
+    "urls": [
+      "../../../files/books/Tools/Vim.pdf#page=181&selection=72,0,72,11"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/2-Tools/2-a-3-a (Vim 管理多个文件).md",
+    "target": "../../../files/images/zk/vim-tab.png",
+    "kind": "image",
+    "urls": [
+      "../../../files/images/zk/vim-tab.png"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/2-Tools/2-a-4 （Vim移动及跳转）.md",
+    "target": "../../../files/books/Tools/Vim.pdf",
+    "kind": "document",
+    "urls": [
+      "../../../files/books/Tools/Vim.pdf#page=198&selection=86,0,86,19",
+      "../../../files/books/Tools/Vim.pdf#page=199&selection=103,0,103,15"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/2-Tools/2-a-5-a （复制粘贴与寄存器的关系）.md",
+    "target": "../../../files/books/Tools/Vim.pdf",
+    "kind": "document",
+    "urls": [
+      "../../../files/books/Tools/Vim.pdf#page=244&selection=23,0,23,4",
+      "../../../files/books/Tools/Vim.pdf#page=245&selection=57,0,57,5"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/2-Tools/2-a-5-b （Vim 宏）.md",
+    "target": "../../../files/books/Tools/Vim.pdf",
+    "kind": "document",
+    "urls": [
+      "../../../files/books/Tools/Vim.pdf#page=255&selection=10,0,10,9",
+      "../../../files/books/Tools/Vim.pdf#page=260&selection=69,0,71,1",
+      "../../../files/books/Tools/Vim.pdf#page=262&selection=8,0,10,14",
+      "../../../files/books/Tools/Vim.pdf#page=265&selection=0,0,3,12",
+      "../../../files/books/Tools/Vim.pdf#page=273&selection=7,0,7,8",
+      "../../../files/books/Tools/Vim.pdf#page=279&selection=45,0,45,3",
+      "../../../files/books/Tools/Vim.pdf#page=281&selection=3,0,3,6"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/2-Tools/2-a-6 (Vim Patterns).md",
+    "target": "../../../files/books/Tools/Vim.pdf",
+    "kind": "document",
+    "urls": [
+      "../../../files/books/Tools/Vim.pdf#page=296&selection=30,0,30,21",
+      "../../../files/books/Tools/Vim.pdf#page=298&selection=9,0,9,23",
+      "../../../files/books/Tools/Vim.pdf#page=298&selection=91,0,91,13",
+      "../../../files/books/Tools/Vim.pdf#page=302&selection=3,0,3,6",
+      "../../../files/books/Tools/Vim.pdf#page=305&selection=113,0,113,6",
+      "../../../files/books/Tools/Vim.pdf#page=350&selection=3,0,5,5"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/2-Tools/2-a-7 (Vim查找).md",
+    "target": "../../../files/books/Tools/Vim.pdf",
+    "kind": "document",
+    "urls": [
+      "../../../files/books/Tools/Vim.pdf#page=318&selection=3,0,3,12"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/2-Tools/2-a-8 (Vim替换).md",
+    "target": "../../../files/books/Tools/Vim.pdf",
+    "kind": "document",
+    "urls": [
+      "../../../files/books/Tools/Vim.pdf#page=338&selection=68,3,68,10",
+      "../../../files/books/Tools/Vim.pdf#page=352&selection=3,0,3,12",
+      "../../../files/books/Tools/Vim.pdf#page=354&selection=3,0,3,10",
+      "../../../files/books/Tools/Vim.pdf#page=357&selection=3,0,3,13"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/2-Tools/2-a-9 (Vim global).md",
+    "target": "../../../files/books/Tools/Vim.pdf",
+    "kind": "document",
+    "urls": [
+      "../../../files/books/Tools/Vim.pdf#page=369&selection=8,0,16,5"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/2-Tools/2-b (Git).md",
+    "target": "files/slides/6.null/missing%20semester%20en.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/6.null/missing%20semester%20en.pdf#page=59&selection=39,0,39,26",
+      "files/slides/6.null/missing%20semester%20en.pdf#page=60&selection=172,0,172,9"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/2-Tools/2-f-1 (debugger).md",
+    "target": "files/slides/6.null/missing%20semester%20en.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/6.null/missing%20semester%20en.pdf#page=64&selection=37,0,37,9"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/2-Tools/2-f-2 (Static Analysis).md",
+    "target": "files/slides/6.null/missing%20semester%20en.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/6.null/missing%20semester%20en.pdf#page=65&selection=210,0,210,15"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/2-Tools/2-f-3 (Profiler).md",
+    "target": "files/slides/6.null/missing%20semester%20en.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/6.null/missing%20semester%20en.pdf#page=68&selection=81,0,81,9",
+      "files/slides/6.null/missing%20semester%20en.pdf#page=71&selection=11,0,11,6",
+      "files/slides/6.null/missing%20semester%20en.pdf#page=71&selection=212,0,212,15",
+      "files/slides/6.null/missing%20semester%20en.pdf#page=72&selection=11,0,11,13",
+      "files/slides/6.null/missing%20semester%20en.pdf#page=72&selection=50,0,50,19"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/2-Tools/2-g (Makefile).md",
+    "target": "../../../files/books/Tools/Makefile.pdf",
+    "kind": "document",
+    "urls": [
+      "../../../files/books/Tools/Makefile.pdf#page=10&selection=78,4,80,6",
+      "../../../files/books/Tools/Makefile.pdf#page=11&selection=0,1,8,5",
+      "../../../files/books/Tools/Makefile.pdf#page=12&selection=8,0,14,4",
+      "../../../files/books/Tools/Makefile.pdf#page=14&selection=209,0,213,8",
+      "../../../files/books/Tools/Makefile.pdf#page=20&selection=145,0,147,4",
+      "../../../files/books/Tools/Makefile.pdf#page=20&selection=60,0,60,15",
+      "../../../files/books/Tools/Makefile.pdf#page=21&selection=167,0,169,3",
+      "../../../files/books/Tools/Makefile.pdf#page=23&selection=23,0,25,3",
+      "../../../files/books/Tools/Makefile.pdf#page=23&selection=78,0,80,4",
+      "../../../files/books/Tools/Makefile.pdf#page=24&selection=168,0,170,7",
+      "../../../files/books/Tools/Makefile.pdf#page=28&selection=67,0,69,4",
+      "../../../files/books/Tools/Makefile.pdf#page=29&selection=178,0,185,0",
+      "../../../files/books/Tools/Makefile.pdf#page=29&selection=6,0,8,4",
+      "../../../files/books/Tools/Makefile.pdf#page=30&selection=21,0,25,4",
+      "../../../files/books/Tools/Makefile.pdf#page=32&selection=6,0,8,5",
+      "../../../files/books/Tools/Makefile.pdf#page=34&selection=80,0,82,5",
+      "../../../files/books/Tools/Makefile.pdf#page=36&selection=54,0,61,5",
+      "../../../files/books/Tools/Makefile.pdf#page=8&selection=97,4,99,3",
+      "../../../files/books/Tools/Makefile.pdf#page=9&selection=56,0,58,4"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/3-Contract Bridge/3-a-1 (NT openings).md",
+    "target": "../../../files/books/Contract%20Bridge/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf",
+    "kind": "document",
+    "urls": [
+      "../../../files/books/Contract%20Bridge/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf#page=11&selection=23,0,34,55",
+      "../../../files/books/Contract%20Bridge/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf#page=11&selection=35,0,55,75",
+      "../../../files/books/Contract%20Bridge/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf#page=11&selection=60,50,65,34",
+      "../../../files/books/Contract%20Bridge/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf#page=11&selection=8,0,19,86",
+      "../../../files/books/Contract%20Bridge/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf#page=12&selection=25,0,25,27"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/3-Contract Bridge/3-a-2 (Responding to 1NT).md",
+    "target": "../../../files/books/Contract%20Bridge/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf",
+    "kind": "document",
+    "urls": [
+      "../../../files/books/Contract%20Bridge/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf#page=16&selection=2,0,40,60",
+      "../../../files/books/Contract%20Bridge/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf#page=16&selection=40,60,47,1",
+      "../../../files/books/Contract%20Bridge/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf#page=16&selection=77,21,81,57",
+      "../../../files/books/Contract%20Bridge/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf#page=17&selection=32,36,34,69",
+      "../../../files/books/Contract%20Bridge/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf#page=17&selection=36,0,37,1"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/5 (Reading).md",
+    "target": "../../files/slides/Scalable%20IO%20in%20Java.pdf",
+    "kind": "document",
+    "urls": [
+      "../../files/slides/Scalable%20IO%20in%20Java.pdf"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/5 (Reading).md",
+    "target": "files/papers/golden_age.pdf",
+    "kind": "document",
+    "urls": [
+      "files/papers/golden_age.pdf#page=1&selection=50,0,53,12"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/6-a (Linux Tools).md",
+    "target": "files/slides/6.null/missing%20semester%20en.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/6.null/missing%20semester%20en.pdf#page=15&selection=157,0,157,13",
+      "files/slides/6.null/missing%20semester%20en.pdf#page=16&selection=235,0,235,12",
+      "files/slides/6.null/missing%20semester%20en.pdf#page=4&selection=147,0,147,8",
+      "files/slides/6.null/missing%20semester%20en.pdf#page=47&selection=154,0,154,15",
+      "files/slides/6.null/missing%20semester%20en.pdf#page=52&selection=195,0,195,15"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/6-b (Shell).md",
+    "target": "files/slides/6.null/missing%20semester%20en.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/6.null/missing%20semester%20en.pdf#page=12&selection=65,0,126,1"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/7-1 (ysyx).md",
+    "target": "../../files/slides/6.null/missing%20semester%20en.pdf",
+    "kind": "document",
+    "urls": [
+      "../../files/slides/6.null/missing%20semester%20en.pdf"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/7-1 (ysyx).md",
+    "target": "codetest/typst/report.pdf",
+    "kind": "document",
+    "urls": [
+      "codetest/typst/report.pdf#page=1&selection=0,0,0,7"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/8 (English).md",
+    "target": "../../files/images/english/lexile.png",
+    "kind": "image",
+    "urls": [
+      "../../files/images/english/lexile.png"
     ]
   }
 ]

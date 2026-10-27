@@ -59,6 +59,8 @@ jobs:
           python3 -B - <<'PYREPORT'
           import json
           import re
+          import posixpath
+          from urllib.parse import unquote, urlsplit
           from pathlib import Path
 
           remaining = 2500
@@ -80,6 +82,38 @@ jobs:
           def path_only(value):
               # Paths only: strip URL queries/fragments and control characters.
               return re.sub(r'[\x00-\x1f\x7f<>]', '', value.split('?', 1)[0].split('#', 1)[0])[:500]
+
+          result = Path('generated-check.json')
+          if result.is_file():
+              try:
+                  errors = json.loads(result.read_text())['errors']
+                  if not isinstance(errors, list):
+                      raise ValueError()
+                  prefixes = ('missing HTML: ', 'missing search: ', 'missing notes listing: ',
+                              'private exposed: ', 'template/Google: ', 'missing resource: ',
+                              'invalid built JS: ')
+                  targets = set()
+                  for error in errors:
+                      if not isinstance(error, str) or not error.startswith('missing resource: ') or ' -> ' not in error:
+                          continue
+                      page, target = error[len('missing resource: '):].split(' -> ', 1)
+                      decoded = unquote(urlsplit(target).path)
+                      location = decoded.lstrip('/') if decoded.startswith('/') else posixpath.join(posixpath.dirname(page), decoded)
+                      targets.add(posixpath.normpath(location))
+                  emit('Generated summary: total errors=' + str(len(errors))
+                       + '; unique missing-resource targets=' + str(len(targets))
+                       + '; display limit=8 (shared payload budget may show fewer). '
+                       + 'Full errors: generated-check.json artifact; JSON is not truncated.')
+                  for error in errors[:8]:
+                      if isinstance(error, str) and error.startswith(prefixes):
+                          prefix = next(p for p in prefixes if error.startswith(p))
+                          emit('Generated: ' + prefix + path_only(error[len(prefix):]))
+                      elif error == 'missing or invalid SearchData.json':
+                          emit('Generated: missing or invalid SearchData.json')
+                      else:
+                          emit('Generated: unrecognized error format; details withheld')
+              except (OSError, ValueError, KeyError, TypeError):
+                  emit('Generated: invalid generated-check.json')
 
           tests = Path('python-tests.log')
           if tests.is_file():
@@ -114,7 +148,6 @@ jobs:
                   emit('Python: no recognized failure records; inspect python-tests.log artifact.')
 
           log = Path('jekyll-build.log')
-          result = Path('generated-check.json')
           if not tests.is_file() and not log.is_file() and not result.is_file():
               emit('故障步骤尚未有构建产物')
           if log.is_file():
@@ -143,25 +176,6 @@ jobs:
                   emit('Jekyll remaining errors: ' + str(len(errors) - 1))
               else:
                   emit('Jekyll log has no explicit Liquid/Exception/Error summary; inspect failed step.')
-          if result.is_file():
-              try:
-                  errors = json.loads(result.read_text())['errors']
-                  if not isinstance(errors, list):
-                      raise ValueError()
-                  prefixes = ('missing HTML: ', 'missing search: ', 'missing notes listing: ',
-                              'private exposed: ', 'template/Google: ', 'missing resource: ',
-                              'invalid built JS: ')
-                  for error in errors[:20]:
-                      if isinstance(error, str) and error.startswith(prefixes):
-                          prefix = next(p for p in prefixes if error.startswith(p))
-                          emit('Generated: ' + prefix + path_only(error[len(prefix):]))
-                      elif error == 'missing or invalid SearchData.json':
-                          emit('Generated: missing or invalid SearchData.json')
-                      else:
-                          emit('Generated: unrecognized error format; details withheld')
-                  emit('Generated remaining errors: ' + str(max(0, len(errors) - 20)))
-              except (OSError, ValueError, KeyError, TypeError):
-                  emit('Generated: invalid generated-check.json')
           PYREPORT
 
       - name: Upload verification artifacts
