@@ -1,10 +1,12 @@
 ---
-title: "About"
+title: 关于
 layout: Post
-content-type: "static"
+content-type: static
 permalink: /about
 ---
 
-# About
+# 关于
 
-Jekyll Garden is a clean, minimal Jekyll theme designed to make publishing your Obsidian vault as a static website incredibly easy. It bridges the gap between private knowledge management and public sharing, allowing you to create a digital garden where your notes are interconnected through wiki-style links and easily discoverable through search. 
+这里是 shulva 的知识笔记站，用于整理与连接学习中的记录。
+
+[浏览笔记]({{ site.baseurl }}/notes) · [主题与致谢]({{ site.baseurl }}/credits)

@@ -1,3 +1,8 @@
+---
+title: "Linux"
+published: true
+feed: show
+---
 # Linux
 
 [Why GNU/Linux and How to](https://ysyx.oscc.cc/docs/ics-pa/0.5.html#why-gnu-linux-and-how-to)

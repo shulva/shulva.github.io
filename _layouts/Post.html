@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -9,9 +9,6 @@
     {%- if site.og_image -%}
     <meta property="og:image" content="{{ site.baseurl }}{{ site.og_image }}">
     {%- endif -%}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     {%- if page.title -%}
     <meta content="{{ page.title }}" property="og:title">
     <meta content="article" property="og:type">
@@ -38,14 +35,6 @@
     <link href="{{ site.baseurl }}/assets/css/vendor/Katex.css" rel="stylesheet" media="all" class="default" />
     {%- endif -%}
 
-    <!--[if IE]>
-        {%- if site.ie_css -%}
-        <link href="{{ site.baseurl }}{{ site.ie_css }}" rel="stylesheet" type="text/css"/>
-        {%- else -%}
-        <link href="{{ site.baseurl }}/assets/css/ie-target.css" rel="stylesheet" type="text/css"/>
-        {%- endif -%}
-    <![endif]-->
-    <!--<link href="/assets/css/prism.css" rel="stylesheet" />-->
     <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml">
 </head>
 

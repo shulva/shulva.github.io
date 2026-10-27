@@ -1,3 +1,8 @@
+---
+title: "Vim模式"
+published: true
+feed: show
+---
 # Vim模式
 #vim
 

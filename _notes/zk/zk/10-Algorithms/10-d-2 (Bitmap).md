@@ -1,3 +1,8 @@
+---
+title: "Bitmap"
+published: true
+feed: show
+---
 # Bitmap
 
 ![位图](files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=91)

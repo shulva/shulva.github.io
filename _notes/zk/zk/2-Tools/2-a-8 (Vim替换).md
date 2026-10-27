@@ -1,8 +1,13 @@
+---
+title: "Vim替换"
+published: true
+feed: show
+---
 # Vim替换
 
 ## 基本操作
 > [!NOTE] :substitute
-> :[range]s[ubstitute]/{pattern}/{string}/[flags]，其中[range]的语法可以从[Vim-Ex定义范围语法](2-Tools/2-a-2-c%20（命令行模式）.md#Vim-Ex定义范围语法)中学习。
+> :[range]s[ubstitute]/{pattern}/{string}/[flags]，其中[range]的语法可以从[Vim-Ex定义范围语法](/notes/zk/zk/2-Tools/2-a-2-c%20%EF%BC%88%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%A8%A1%E5%BC%8F%EF%BC%89#Vim-Ex%E5%AE%9A%E4%B9%89%E8%8C%83%E5%9B%B4%E8%AF%AD%E6%B3%95)中学习。
 
 | 替换域中的特殊字符        | 描述                                       |
 | ---------------- | ---------------------------------------- |

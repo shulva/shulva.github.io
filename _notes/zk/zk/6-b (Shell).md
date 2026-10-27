@@ -1,3 +1,8 @@
+---
+title: "Shell"
+published: true
+feed: show
+---
 # Shell
 #shell
 

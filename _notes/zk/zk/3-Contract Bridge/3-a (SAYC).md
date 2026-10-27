@@ -1,3 +1,8 @@
+---
+title: "SAYC"
+published: true
+feed: show
+---
 # SAYC
 
 > [!info]  introduction

@@ -1,3 +1,8 @@
+---
+title: "Git"
+published: true
+feed: show
+---
 # Git
 #git
 

@@ -1,3 +1,8 @@
+---
+title: "计算机体系结构"
+published: true
+feed: show
+---
 # 计算机体系结构
 
 > [!NOTE] 

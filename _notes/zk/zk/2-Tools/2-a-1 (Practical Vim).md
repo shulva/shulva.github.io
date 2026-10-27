@@ -1,3 +1,8 @@
+---
+title: "Practical Vim"
+published: true
+feed: show
+---
 # Practical Vim
 #vim
 

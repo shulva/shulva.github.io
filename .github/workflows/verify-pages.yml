@@ -1,0 +1,56 @@
+name: Verify Pages
+
+on:
+  push:
+    branches:
+      - fix/pages-reliability
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler: '2.4.22'
+          bundler-cache: true
+
+      - name: Run Python tests
+        run: PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+
+      - name: Run Node tests
+        run: |
+          node tests/serialization.cjs
+          node tests/wiki-resolution.cjs
+
+      - name: Build Jekyll
+        shell: bash
+        run: |
+          set -o pipefail
+          bundle exec jekyll build --destination _site 2>&1 | tee jekyll-build.log
+
+      - name: Check generated site
+        run: python3 scripts/check_generated.py _site --manifest scripts/publication-manifest.json --output generated-check.json
+
+      - name: Upload verification artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pages-verification-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            jekyll-build.log
+            generated-check.json
+            _site/
+          if-no-files-found: warn
+          retention-days: 7

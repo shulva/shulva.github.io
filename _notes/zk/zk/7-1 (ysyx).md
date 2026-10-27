@@ -1,3 +1,8 @@
+---
+title: "YSYX问题记录"
+published: true
+feed: show
+---
 # YSYX问题记录
 
 ## **预学习阶段**

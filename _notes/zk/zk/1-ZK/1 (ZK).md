@@ -1,6 +1,7 @@
 ---
-title:zk
-feed:show
+title: zk
+feed: show
+published: true
 ---
 # ZK
 

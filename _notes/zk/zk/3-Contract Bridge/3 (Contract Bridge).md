@@ -1,3 +1,8 @@
+---
+title: "Contract Bridge"
+published: true
+feed: show
+---
 # Contract Bridge
 
 > [!info]  introduction

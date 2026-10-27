@@ -1,3 +1,8 @@
+---
+title: "Vim移动及跳转"
+published: true
+feed: show
+---
 # Vim移动及跳转
 
 ## 常用跳转动作

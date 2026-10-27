@@ -1,3 +1,8 @@
+---
+title: "Principle"
+published: true
+feed: show
+---
 # Principle
 #pdf #zk
 

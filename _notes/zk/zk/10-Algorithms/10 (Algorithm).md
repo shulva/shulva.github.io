@@ -1,3 +1,8 @@
+---
+title: "Algorithm"
+published: true
+feed: show
+---
 # Algorithm
 
 ## what is algorithm?

@@ -1,3 +1,8 @@
+---
+title: "Tree"
+published: true
+feed: show
+---
 # Tree
 
 ![Rooted Tree](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=3)

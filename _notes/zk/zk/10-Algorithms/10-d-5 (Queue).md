@@ -1,3 +1,8 @@
+---
+title: "Queue"
+published: true
+feed: show
+---
 # Queue
 
 ![04.Stack + Queue, 页面 2](files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=76)

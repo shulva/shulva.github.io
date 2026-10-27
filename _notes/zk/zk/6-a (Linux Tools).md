@@ -1,3 +1,8 @@
+---
+title: "Linux Tools"
+published: true
+feed: show
+---
 # Linux Tools
 
 > [!note] tutorial 

@@ -1,3 +1,8 @@
+---
+title: "pytorch"
+published: true
+feed: show
+---
 # pytorch
 
 ### 数据操作

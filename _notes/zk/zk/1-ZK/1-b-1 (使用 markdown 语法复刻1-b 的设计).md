@@ -1,3 +1,8 @@
+---
+title: "使用 markdown 语法复刻 1-b 所提及的设计"
+published: true
+feed: show
+---
 # 使用 markdown 语法复刻 1-b 所提及的设计
 #pdf #markdown
 

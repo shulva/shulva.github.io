@@ -1,3 +1,8 @@
+---
+title: "Vim宏"
+published: true
+feed: show
+---
 # Vim宏
 #### Vim-Macro
 

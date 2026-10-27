@@ -4,4 +4,4 @@ layout: Post
 permalink: /notes
 ---
 
-Browse all published notes in your digital garden. Notes are organized by connections, not chronology. Click any note to explore its links and context.
+浏览当前已发布的笔记，或使用下方搜索查找内容。

@@ -1,3 +1,8 @@
+---
+title: "Vector"
+published: true
+feed: show
+---
 # Vector
 #### 无序向量
 

@@ -1,3 +1,8 @@
+---
+title: "Tmux"
+published: true
+feed: show
+---
 # Tmux
 
 > [!NOTE] tutorial

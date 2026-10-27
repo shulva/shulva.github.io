@@ -1,3 +1,8 @@
+---
+title: "Vim global"
+published: true
+feed: show
+---
 # Vim global
 
 ## 基本形式
@@ -39,4 +44,4 @@
 > But if the commands change the current line, `:g` continues from there(the current line has changed).
 > you can analyze an example below named "执行复数个命令"
 
-![Vim-Ex命令](2-Tools/2-a-2-c%20（命令行模式）.md#Vim-Ex命令)
+![Vim-Ex命令](/notes/zk/zk/2-Tools/2-a-2-c%20%EF%BC%88%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%A8%A1%E5%BC%8F%EF%BC%89#Vim-Ex%E5%91%BD%E4%BB%A4)

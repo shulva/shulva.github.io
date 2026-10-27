@@ -1,3 +1,8 @@
+---
+title: "Vim查找"
+published: true
+feed: show
+---
 # Vim查找
 
 ## 基本命令

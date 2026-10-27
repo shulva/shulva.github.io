@@ -1,3 +1,8 @@
+---
+title: "English"
+published: true
+feed: show
+---
 # English
 [有什么教材能替换新概念？](https://www.zhihu.com/question/420510685/answer/2344157805)
 

@@ -1,3 +1,8 @@
+---
+title: "C"
+published: true
+feed: show
+---
 # C
 
 ## Learn C

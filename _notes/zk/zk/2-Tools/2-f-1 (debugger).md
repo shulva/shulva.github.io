@@ -1,3 +1,8 @@
+---
+title: "debugger"
+published: true
+feed: show
+---
 # debugger
 
 > [!NOTE] gdb

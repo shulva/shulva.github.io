@@ -1,3 +1,8 @@
+---
+title: "5 (Reading)"
+published: true
+feed: show
+---
 > [!Todo] article
 >[系统设计黄金法则：简单之美](https://blog.sciencenet.cn/blog-414166-562616.html) 
 >[如何有效地报告Bug (greenend.org.uk)](https://www.chiark.greenend.org.uk/~sgtatham/bugs-cn.html)

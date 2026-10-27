@@ -1,3 +1,8 @@
+---
+title: "Static Analysis"
+published: true
+feed: show
+---
 # Static Analysis
 
 [6.null](files/slides/6.null/missing%20semester%20en.pdf#page=65&selection=210,0,210,15)

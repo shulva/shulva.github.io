@@ -1,3 +1,8 @@
+---
+title: "Profiler"
+published: true
+feed: show
+---
 # Profiler
 
 > [!note] python's profiler

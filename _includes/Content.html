@@ -12,18 +12,20 @@ document.addEventListener('DOMContentLoaded', function() {
     const availableNotes = [
         {%- for note in site.notes -%}
             {
-                title: "{{ note.title | escape }}",
-                url: "{{ site.baseurl }}{{ note.url }}",
-                excerpt: "{{ note.content | strip_html | normalize_whitespace | truncatewords: 20 | escape }}"
+                title: {{ note.title | jsonify | replace: '<', '\u003c' }},
+                name: {{ note.path | split: '/' | last | remove: '.md' | jsonify | replace: '<', '\u003c' }},
+                path: {{ note.path | remove_first: '_notes/' | remove: '.md' | jsonify | replace: '<', '\u003c' }},
+                url: {{ note.url | prepend: site.baseurl | jsonify | replace: '<', '\u003c' }},
+                excerpt: {{ note.content | strip_html | normalize_whitespace | truncatewords: 20 | jsonify | replace: '<', '\u003c' }}
             }{%- unless forloop.last -%},{%- endunless -%}
         {%- endfor -%}
     ];
     
     // Function to find note by title (case-insensitive)
     function findNoteByTitle(title) {
-        return availableNotes.find(note => 
-            note.title.toLowerCase() === title.toLowerCase()
-        );
+        const target = title.split('|')[0].split('#')[0].replace(/\.md$/i, '').trim().toLowerCase();
+        const matches = availableNotes.filter(note => [note.title, note.name, note.path].some(value => value && value.toLowerCase() === target));
+        return matches.length === 1 ? matches[0] : undefined;
     }
     
     // Function to process wiki links in text nodes only
@@ -71,8 +73,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     const link = document.createElement('a');
                     
                     if (foundNote) {
-                        link.href = foundNote.url;
-                        link.textContent = linkText;
+                        const destination = linkText.split('|')[0];
+                        const fragment = destination.includes('#') ? destination.slice(destination.indexOf('#')) : '';
+                        link.href = foundNote.url + fragment;
+                        link.textContent = linkText.includes('|') ? linkText.slice(linkText.indexOf('|') + 1) : linkText;
                         link.className = 'wiki-link';
                         
                         // Add hover preview functionality
@@ -86,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     } else {
                         // Note doesn't exist - create a placeholder
                         link.href = 'javascript:void(0)';
-                        link.textContent = linkText;
+                        link.textContent = linkText.includes('|') ? linkText.slice(linkText.indexOf('|') + 1) : linkText;
                         link.className = 'stale-link';
                         link.title = 'Note not found: ' + linkText;
                     }
@@ -123,13 +127,16 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const preview = document.createElement('div');
         preview.className = 'link-preview';
-        preview.innerHTML = `
-            <div class="preview-content">
-                <strong>${title}</strong>
-                <p>${excerpt}</p>
-            </div>
-        `;
-        
+        const previewContent = document.createElement('div');
+        previewContent.className = 'preview-content';
+        const heading = document.createElement('strong');
+        heading.textContent = title;
+        const summary = document.createElement('p');
+        summary.textContent = excerpt;
+        previewContent.appendChild(heading);
+        previewContent.appendChild(summary);
+        preview.appendChild(previewContent);
+
         document.body.appendChild(preview);
         
         // Position the preview near the link

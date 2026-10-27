@@ -1,3 +1,8 @@
+---
+title: "NT openings"
+published: true
+feed: show
+---
 # NT openings
 
 > [!NOTE]

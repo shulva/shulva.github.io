@@ -36,15 +36,14 @@ preferences:
 
 # Site Configuration
 title: "shulva's note"
-heading: "have a nice day"
-description: "just for fun"
+heading: "shulva 的知识笔记"
+description: "知识、阅读与学习笔记"
 url: "https://shulva.github.io"
 baseurl: ""
 
 # Asset Configuration
-apple_touch_icon: "/assets/img/profile.png"
+favicon: "/assets/img/favicon.svg"
 css_file: "/assets/css/style.css"
-ie_css: "/assets/css/ie-target.css"
 
 # Menu Items
 menu:
@@ -57,7 +56,7 @@ menu:
 
 # Footer
 footer:
-  copyright: "© 2024 Your Name. Contents under CC-BY-NC"
+  copyright: "shulva · 知识笔记"
   credits:
     enabled: true
     url: "/credits"
@@ -109,3 +108,5 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - scripts/
+  - tests/

@@ -1,3 +1,8 @@
+---
+title: "Vim文件"
+published: true
+feed: show
+---
 # Vim文件
 
 ## 缓冲区

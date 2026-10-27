@@ -1,3 +1,8 @@
+---
+title: "RESPONDING TO 1NT"
+published: true
+feed: show
+---
 # RESPONDING TO 1NT
 
 

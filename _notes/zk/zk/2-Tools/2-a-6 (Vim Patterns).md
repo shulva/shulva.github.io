@@ -1,3 +1,8 @@
+---
+title: "Vim Patterns"
+published: true
+feed: show
+---
 # Vim Patterns
 
 ## 特殊操作
