@@ -43,6 +43,81 @@ jobs:
       - name: Check generated site
         run: python3 scripts/check_generated.py _site --manifest scripts/publication-manifest.json --output generated-check.json
 
+      - name: Report failure annotations
+        if: failure()
+        shell: bash
+        run: |
+          python3 -B - <<'PYREPORT'
+          import json
+          import re
+          from pathlib import Path
+
+          def emit(message):
+              # Cap the escaped payload; never split a workflow-command escape.
+              parts, size = [], 0
+              for char in message:
+                  part = {'%': '%25', '\r': '%0D', '\n': '%0A'}.get(char, char)
+                  if size + len(part) > 2000:
+                      break
+                  parts.append(part)
+                  size += len(part)
+              print('::error::' + ''.join(parts))
+
+          def path_only(value):
+              # Paths only: strip URL queries/fragments and control characters.
+              return re.sub(r'[\x00-\x1f\x7f<>]', '', value.split('?', 1)[0].split('#', 1)[0])[:500]
+
+          log = Path('jekyll-build.log')
+          result = Path('generated-check.json')
+          if not log.is_file() and not result.is_file():
+              emit('故障步骤尚未有构建产物')
+          if log.is_file():
+              errors = []
+              for line in log.read_text(errors='replace').splitlines():
+                  line = re.sub(r'\x1b\[[0-9;]*m', '', line)
+                  match = re.search(r'Liquid (?:Exception|Error|syntax error)|\b(?:[\w:]*Exception|[\w:]*Error)\s*:', line, re.I)
+                  if not match:
+                      continue
+                  # Do not publish arbitrary exception text or source excerpts.
+                  summary = match.group(0).rstrip(':')
+                  location = re.search(r'\bin\s+([\w./%+@()\-\u0080-\uffff]+)(?::(\d+))?\s*$', line)
+                  if location:
+                      summary += ' in ' + path_only(location.group(1))
+                      if location.group(2):
+                          summary += ':' + location.group(2)
+                  missing = re.search(r"(?:Could not locate|No such file or directory|File not found)[^'\"\n]*['\"]([^'\"\n]+)['\"]", line, re.I)
+                  if missing:
+                      summary += '; missing resource: ' + path_only(missing.group(1))
+                  tag = re.search(r"Unknown tag:\s*['\"]([\w-]+)['\"]", line, re.I)
+                  if tag:
+                      summary += '; unknown tag: ' + tag.group(1)
+                  errors.append(summary[:300])
+              if errors:
+                  emit('Jekyll: ' + errors[0])
+                  emit('Jekyll remaining errors: ' + str(len(errors) - 1))
+              else:
+                  emit('Jekyll log has no explicit Liquid/Exception/Error summary; inspect failed step.')
+          if result.is_file():
+              try:
+                  errors = json.loads(result.read_text())['errors']
+                  if not isinstance(errors, list):
+                      raise ValueError()
+                  prefixes = ('missing HTML: ', 'missing search: ', 'missing notes listing: ',
+                              'private exposed: ', 'template/Google: ', 'missing resource: ',
+                              'invalid built JS: ')
+                  for error in errors[:20]:
+                      if isinstance(error, str) and error.startswith(prefixes):
+                          prefix = next(p for p in prefixes if error.startswith(p))
+                          emit('Generated: ' + prefix + path_only(error[len(prefix):]))
+                      elif error == 'missing or invalid SearchData.json':
+                          emit('Generated: missing or invalid SearchData.json')
+                      else:
+                          emit('Generated: unrecognized error format; details withheld')
+                  emit('Generated remaining errors: ' + str(max(0, len(errors) - 20)))
+              except (OSError, ValueError, KeyError, TypeError):
+                  emit('Generated: invalid generated-check.json')
+          PYREPORT
+
       - name: Upload verification artifacts
         if: always()
         uses: actions/upload-artifact@v4
