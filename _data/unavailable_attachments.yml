@@ -1,0 +1,61 @@
+[
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10 (Algorithm).md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf#page=5",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf#page=9",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf#page=15",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf#page=19"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10 (Algorithm).md",
+    "target": "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf",
+    "kind": "document",
+    "urls": [
+      "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf#page=27&selection=180,0,182,2"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/1-ZK/1-b (排版参考).md",
+    "target": "../../../files/images/zk/intel-manual.png",
+    "kind": "image",
+    "urls": [
+      "../../../files/images/zk/intel-manual.png"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/1-ZK/1-b (排版参考).md",
+    "target": "../../../files/images/zk/csapp-design.png",
+    "kind": "image",
+    "urls": [
+      "../../../files/images/zk/csapp-design.png"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/1-ZK/1-b (排版参考).md",
+    "target": "../../../files/images/zk/clrs-design.png",
+    "kind": "image",
+    "urls": [
+      "../../../files/images/zk/clrs-design.png"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/1-ZK/1 (ZK).md",
+    "target": "../../../files/images/zk/complete-zettel.png",
+    "kind": "image",
+    "urls": [
+      "../../../files/images/zk/complete-zettel.png"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/1-ZK/1 (ZK).md",
+    "target": "../../../files/images/zk/2020-08-13_folgezettel-sequence.png",
+    "kind": "image",
+    "urls": [
+      "../../../files/images/zk/2020-08-13_folgezettel-sequence.png"
+    ]
+  }
+]

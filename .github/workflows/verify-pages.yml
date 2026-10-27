@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-22.04
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           persist-credentials: false
 
@@ -27,7 +27,7 @@ jobs:
           bundler-cache: true
 
       - name: Run Python tests
-        run: PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+        run: PYTHONDONTWRITEBYTECODE=1 bundle exec python3 -m unittest discover -s tests
 
       - name: Run Node tests
         run: |
@@ -120,7 +120,7 @@ jobs:
 
       - name: Upload verification artifacts
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: pages-verification-${{ github.run_id }}-${{ github.run_attempt }}
           path: |

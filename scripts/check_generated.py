@@ -1,8 +1,15 @@
 #!/usr/bin/env python3
 """Read a completed build only. Manifest contains public/private file,url entries."""
 import argparse,json,re,subprocess,tempfile
+from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote,urlsplit
+
+class ResourceAttributes(HTMLParser):
+ def __init__(self,text):
+  super().__init__();self.targets=[];self.feed(text)
+ def handle_starttag(self,tag,attrs):
+  self.targets.extend(value for name,value in attrs if name in {"src","href"} and value)
 
 def check(build,manifest):
  root=Path(build).resolve();errors=[];html=list(root.rglob('*.html'))
@@ -24,7 +31,7 @@ def check(build,manifest):
  for path in html:
   text=path.read_text()
   if re.search(r'Your Name|fonts\.googleapis|fonts\.gstatic',text):errors.append('template/Google: '+str(path.relative_to(root)))
-  for target in re.findall(r'(?:src|href)=[\'"]([^\'"]+)',text):
+  for target in ResourceAttributes(text).targets:
    parsed=urlsplit(target)
    if parsed.scheme or target.startswith('//') or not parsed.path:continue
    decoded=unquote(parsed.path)

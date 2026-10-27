@@ -1,0 +1,37 @@
+{%- assign rendered = content -%}
+{%- assign chunks = rendered | split: '<' -%}
+{%- assign in_pre = false -%}{%- assign in_code = false -%}{%- assign pending_pdf = false -%}
+{%- for chunk in chunks -%}
+ {%- if forloop.first -%}{{- chunk -}}{%- else -%}
+  {%- assign tag = chunk | split: '>' | first -%}
+  {%- assign name = tag | split: ' ' | first | downcase -%}
+  {%- assign tail = chunk | remove_first: tag -%}
+  {%- if name == 'pre' -%}{%- assign in_pre = true -%}{%- endif -%}
+  {%- if name == 'code' -%}{%- assign in_code = true -%}{%- endif -%}
+  {%- unless in_pre or in_code -%}
+   {%- for attachment in site.data.unavailable_attachments -%}
+    {%- if page.path == attachment.page -%}
+     {%- for url in attachment.urls -%}
+      {%- assign escaped_url = url | escape -%}
+      {%- if name == 'img' and attachment.kind == 'image' -%}
+       {%- capture needle %} src="{{ escaped_url }}"{% endcapture -%}
+       {%- capture replacement %} src="{{ site.baseurl }}/assets/images/attachment-unavailable.svg" data-missing-resource="{{ escaped_url }}" title="附件未收录：{{ escaped_url }}"{% endcapture -%}
+       {%- assign tag = tag | replace: needle, replacement -%}
+      {%- elsif name == 'a' and attachment.kind == 'document' -%}
+       {%- capture needle %} href="{{ escaped_url }}"{% endcapture -%}
+       {%- if tag contains needle -%}
+        {%- capture replacement %} aria-disabled="true" data-missing-resource="{{ escaped_url }}"{% endcapture -%}
+        {%- assign tag = tag | replace: needle, replacement -%}{%- assign pending_pdf = true -%}
+       {%- endif -%}
+      {%- endif -%}
+     {%- endfor -%}
+    {%- endif -%}
+   {%- endfor -%}
+  {%- endunless -%}
+  {{- '<' -}}{{- tag -}}
+  {%- if name == '/a' and pending_pdf -%}{{- '>' -}}<span class="unavailable-attachment">附件未收录</span>{{- tail | remove_first: '>' -}}{%- assign pending_pdf = false -%}
+  {%- else -%}{{- tail -}}{%- endif -%}
+  {%- if name == '/pre' -%}{%- assign in_pre = false -%}{%- endif -%}
+  {%- if name == '/code' -%}{%- assign in_code = false -%}{%- endif -%}
+ {%- endif -%}
+{%- endfor -%}
