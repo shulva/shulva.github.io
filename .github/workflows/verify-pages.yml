@@ -27,12 +27,19 @@ jobs:
           bundler-cache: true
 
       - name: Run Python tests
-        run: PYTHONDONTWRITEBYTECODE=1 bundle exec python3 -m unittest discover -s tests
+        shell: bash
+        run: |
+          set -e -o pipefail
+          PYTHONDONTWRITEBYTECODE=1 bundle exec python3 -m unittest discover -s tests -v 2>&1 | tee python-tests.log
 
       - name: Run Node tests
+        shell: bash
         run: |
-          node tests/serialization.cjs
-          node tests/wiki-resolution.cjs
+          set -e -o pipefail
+          {
+            node tests/serialization.cjs
+            node tests/wiki-resolution.cjs
+          } 2>&1 | tee node-tests.log
 
       - name: Build Jekyll
         shell: bash
@@ -52,24 +59,61 @@ jobs:
           import re
           from pathlib import Path
 
+          remaining = 2500
+
           def emit(message):
+              global remaining
               # Cap the escaped payload; never split a workflow-command escape.
               parts, size = [], 0
               for char in message:
                   part = {'%': '%25', '\r': '%0D', '\n': '%0A'}.get(char, char)
-                  if size + len(part) > 2000:
+                  if size + len(part) + len('::error::') + 1 > remaining:
                       break
                   parts.append(part)
                   size += len(part)
-              print('::error::' + ''.join(parts))
+              if parts:
+                  print('::error::' + ''.join(parts))
+                  remaining -= size + len('::error::') + 1
 
           def path_only(value):
               # Paths only: strip URL queries/fragments and control characters.
               return re.sub(r'[\x00-\x1f\x7f<>]', '', value.split('?', 1)[0].split('#', 1)[0])[:500]
 
+          tests = Path('python-tests.log')
+          if tests.is_file():
+              diagnostics = []
+              # Match diagnostic records only; never echo traceback source lines,
+              # assertion HTML diffs, or arbitrary note bodies.
+              for line in tests.read_text(errors='replace').splitlines():
+                  line = re.sub(r'\x1b\[[0-9;]*m', '', line)
+                  summary = re.match(r'^(?:FAILED\b.*|(?:ERROR|FAIL): .+)$', line)
+                  frame = re.match(r'^\s*File "([^"]+)", line (\d+)', line)
+                  ruby = re.search(r"(?:^|:\s+|\sfrom\s+)([^\s]+\.rb):(\d+):[^\n]*", line)
+                  exception = re.match(r'^(?:[\w.]*Error|[\w.]*Exception|LoadError|LiquidSyntaxError|NoMethodError)(?::|$)', line)
+                  if summary:
+                      diagnostics.append((0, summary.group(0)[:250]))
+                  elif frame:
+                      diagnostics.append((2, 'File ' + path_only(frame.group(1)) + ':' + frame.group(2)))
+                  elif ruby or (exception and 'tests/fixtures/' in line):
+                      # Ruby stderr is carried inside the Python assertion. Keep
+                      # its error record and frames, including controlled fixtures.
+                      if exception:
+                          diagnostics.append((1, exception.group(0).rstrip(':')))
+                      record = line[ruby.start(1):] if ruby else line
+                      diagnostics.append((1 if re.search(r'(?:Error|Exception)\b', record) else 2, record[:400]))
+                  elif exception:
+                      # Exception values can contain entire rendered note bodies.
+                      # Keep the class and safe interpreter/API diagnostic text.
+                      detail = re.search(r"(?:cannot load such file|undefined (?:method|local variable)|wrong number of arguments|Unknown tag|Liquid syntax error)[^<>\n]{0,180}", line, re.I)
+                      diagnostics.append((1, exception.group(0).rstrip(':') + (': ' + detail.group(0) if detail else '')))
+              for _, diagnostic in sorted(dict.fromkeys(diagnostics), key=lambda record: record[0]):
+                  emit('Python: ' + diagnostic)
+              if not diagnostics:
+                  emit('Python: no recognized failure records; inspect python-tests.log artifact.')
+
           log = Path('jekyll-build.log')
           result = Path('generated-check.json')
-          if not log.is_file() and not result.is_file():
+          if not tests.is_file() and not log.is_file() and not result.is_file():
               emit('故障步骤尚未有构建产物')
           if log.is_file():
               errors = []
@@ -124,6 +168,8 @@ jobs:
         with:
           name: pages-verification-${{ github.run_id }}-${{ github.run_attempt }}
           path: |
+            python-tests.log
+            node-tests.log
             jekyll-build.log
             generated-check.json
             _site/
