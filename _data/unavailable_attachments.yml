@@ -57,5 +57,112 @@
     "urls": [
       "../../../files/images/zk/2020-08-13_folgezettel-sequence.png"
     ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-a （复杂度）.md",
+    "target": "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf",
+    "kind": "document",
+    "urls": [
+      "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf#page=30&selection=139,0,149,1",
+      "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf#page=31&selection=64,19,71,1",
+      "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf#page=31&selection=87,0,91,2",
+      "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf#page=33&selection=165,0,165,5",
+      "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf#page=33&selection=64,0,64,5",
+      "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf#page=38&selection=52,0,55,2",
+      "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf#page=451&selection=95,0,130,2"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-a （复杂度）.md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf#page=29",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf#page=30",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf#page=31",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf#page=33",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf#page=34"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-a-1 (复杂度分析).md",
+    "target": "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf",
+    "kind": "document",
+    "urls": [
+      "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf#page=446&selection=170,0,184,17"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-a-1 (复杂度分析).md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf#page=43",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf#page=47",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf#page=64",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf#page=68"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-b （动态规划）.md",
+    "target": "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf",
+    "kind": "document",
+    "urls": [
+      "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf#page=436&selection=212,0,219,4"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-b （动态规划）.md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf#page=77",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf#page=84"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-c-1 (起泡排序).md",
+    "target": "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf",
+    "kind": "document",
+    "urls": [
+      "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf#page=27&selection=15,0,15,2",
+      "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf#page=32&selection=15,0,15,4"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-c-2 （归并排序）.md",
+    "target": "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf",
+    "kind": "document",
+    "urls": [
+      "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf#page=32&selection=15,0,15,4"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-f （递归）.md",
+    "target": "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf",
+    "kind": "document",
+    "urls": [
+      "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf#page=39&selection=12,0,14,4",
+      "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf#page=39&selection=315,0,315,4",
+      "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf#page=41&selection=14,0,14,4",
+      "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf#page=42&selection=284,6,284,23",
+      "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf#page=42&selection=56,1,58,13",
+      "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf#page=44&selection=13,1,14,7",
+      "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf#page=44&selection=311,0,313,4",
+      "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf#page=444&selection=11,0,12,0",
+      "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf#page=444&selection=280,0,280,6",
+      "../../../files/books/Algorithms/dsacpp/dsacpp-3rd-edn.pdf#page=45&selection=43,0,43,4"
+    ]
+  },
+  {
+    "page": "_notes/zk/zk/10-Algorithms/10-f （递归）.md",
+    "target": "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf",
+    "kind": "document",
+    "urls": [
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf#page=55",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf#page=60",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf#page=70",
+      "files/slides/Tsinghua-DSA-2024Fall-chapter/01.Introduction.pdf#page=84"
+    ]
   }
 ]
