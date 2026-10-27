@@ -14,8 +14,6 @@ jobs:
   verify:
     runs-on: ubuntu-22.04
     timeout-minutes: 15
-    env:
-      TMPDIR: ${{ runner.temp }}
     steps:
       - uses: actions/checkout@v5
         with:
@@ -29,6 +27,8 @@ jobs:
           bundler-cache: true
 
       - name: Run Python tests
+        env:
+          TMPDIR: ${{ runner.temp }}
         shell: bash
         run: |
           set -e -o pipefail
