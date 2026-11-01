@@ -1,0 +1,15 @@
+{
+  "schema": "shulva-selective-v1",
+  "selected_notes": 0,
+  "selected_assets": 0,
+  "default_private": true,
+  "files": {
+    "index.md": "3bf9d02168fd790c798a6dd8b865865deb214c1912f41860c2e6f95d5abf6d94",
+    "demo/公开演示.md": "d4b26c3b5db9c5d711c8763ecb89e7a0395ab6d960cb082fbf05b43deb186d27",
+    "demo/中文 路径.md": "51df7c840dc14901da5dbd945bc545ce2fe8cde7eed75e780834f4ea9f797401",
+    "demo/learning.png": "3854489923a94a55f06118742ddcc906c8faf912bb7e2afab80ac6c0712569a2",
+    "notes/index.md": "fdb18a5d4d679a994c13b53ec6ee7b1eff17c5474bbf0c00fdbf1eaaf38dc33a"
+  },
+  "synthetic_demo_notes": 2,
+  "synthetic_demo_assets": 1
+}

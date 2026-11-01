@@ -1,0 +1,37 @@
+name: Validate sanitized Quartz checkout
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - run: python -m pip install -r requirements.txt
+      - name: Synthetic privacy tests outside checkout
+        env:
+          TEST_SCRATCH: ${{ runner.temp }}/quartz-privacy-fixtures
+        run: |
+          mkdir -p "$TEST_SCRATCH"
+          python tests/test_selective_export.py
+          python tests/test_preview_routes.py
+          python tests/test_cv_notes.py
+          python tests/real_build_acceptance.py
+      - run: python scripts/check_stage.py content
+      - run: python scripts/site-build.py
+      - run: python scripts/check_resources.py public
+      - run: python scripts/check_http_routes.py public
+      - run: node node_modules/typescript/bin/tsc --noEmit --incremental false
+# Deliberately no deploy job, Pages permissions, artifact upload or private-vault access.

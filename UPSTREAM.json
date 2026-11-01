@@ -1,0 +1,17 @@
+{
+  "repository": "https://github.com/jackyzha0/quartz",
+  "tag": "v4.5.2",
+  "commit": "4923affa7722dfc751f1074348e6dad214fe0c08",
+  "package_lock_sha256": "9ea5873a2bb495054f23b16f96d1d41f44348863e655f4c6d86b107f372b09b9",
+  "patches": [
+    "Head.tsx: removed unconditional cdnjs preconnect",
+    "custom.scss: system fonts and Chinese reading spacing",
+    "quartz/static/giscus omitted: unused remote-image CSS; preserved outside public worktree",
+    "renderPage.tsx: shared header above all page layouts for persistent CV / NOTES navigation",
+    "SiteNav.tsx and components/index.ts: accessible section links with active state",
+    "custom.scss: responsive sticky navigation and minimal CV layout",
+    "renderPage.tsx: omit root CV sidebar wrappers so inherited 100vh sidebars cannot occupy document flow",
+    "custom.scss: root ID-scoped document-flow layout and compact responsive spacing override Quartz at all breakpoints"
+  ],
+  "site_configuration": "local fonts; MathJax SVG; no analytics; no OG image fetch; no deploy"
+}
