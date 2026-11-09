@@ -3,16 +3,16 @@ import hashlib,json,os,pathlib,sys,tempfile,unittest
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
 from check_stage import check
+from selective_export import export
 
 class StagePaths(unittest.TestCase):
  def setUp(self):
   base=pathlib.Path(os.environ['TEST_SCRATCH']).resolve()
   if base==ROOT or ROOT in base.parents:raise RuntimeError('fixtures must be outside checkout')
   self.case=pathlib.Path(tempfile.mkdtemp(prefix='stage-path-',dir=base))
-  self.stage=self.case/'content';self.stage.mkdir()
+  self.stage=self.case/'content'
   (self.case/'other').mkdir()
-  text=b'Synthetic public fixture.\n';(self.stage/'index.md').write_bytes(text)
-  (self.stage/'publication.json').write_text(json.dumps({'schema':'shulva-selective-v1','default_private':True,'selected_notes':0,'selected_assets':0,'files':{'index.md':hashlib.sha256(text).hexdigest()}}))
+  vault=self.case/'empty-fixture';vault.mkdir();export(vault,self.stage)
  def test_parent_relative_path(self):
   path=self.case/'other'/'..'/'content'
   self.assertEqual(check(path),check(self.stage))

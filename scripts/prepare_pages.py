@@ -5,7 +5,7 @@ from check_stage import check
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 FILES = ('.gitignore', 'LICENSE.txt', 'README.md', 'UPSTREAM.json', 'globals.d.ts',
-         'index.d.ts', 'package.json', 'package-lock.json', 'requirements.txt',
+         'index.d.ts', 'cv.md', 'package.json', 'package-lock.json', 'requirements.txt',
          'quartz.config.ts', 'quartz.layout.ts', 'tsconfig.json')
 DIRECTORIES = ('.github', 'content', 'quartz', 'scripts', 'tests')
 EXCLUDED = {'.git', 'node_modules', '.quartz-cache', '__pycache__', '.DS_Store'}

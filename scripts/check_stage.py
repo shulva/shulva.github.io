@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Validate only the export's approved file inventory, without private-vault access."""
 import hashlib,json,pathlib,sys
+from selective_export import read_cv
 
 def check(root):
  root=pathlib.Path(root).absolute()
@@ -10,6 +11,9 @@ def check(root):
  if any(p.is_symlink() for p in root.rglob('*')):raise ValueError('unsafe staging root')
  manifest=json.loads((root/'publication.json').read_text())
  if manifest.get('schema')!='shulva-selective-v1' or manifest.get('default_private') is not True:raise ValueError('unrecognized publication manifest')
+ cv=manifest.get('cv_source',{})
+ digest=hashlib.sha256(read_cv()).hexdigest()
+ if cv!={'mode':'repository-root-cv-v1','sha256':digest} or manifest['files'].get('index.md')!=digest:raise ValueError('CV source/staging integrity failure; re-export cv.md')
  actual={p.relative_to(root).as_posix() for p in root.rglob('*') if p.is_file()}
  if actual!=set(manifest['files'])|{'publication.json'}:raise ValueError('unexpected staged files')
  for name,digest in manifest['files'].items():

@@ -46,7 +46,9 @@ CI builds/tests only the sanitized checkout. The validation workflow has no Page
 
 ## CV / NOTES
 
-The exporter always generates the app-owned blank CV (`content/index.md`) and Notes landing (`content/notes/index.md`), with integrity hashes in the publication manifest. These pages do not count as selected user notes. `add_demo.py` updates only the Notes landing and synthetic demos; rerunning the export/demo/build sequence preserves the split. Shared top navigation appears on all generated pages; Notes, demos and lists retain Quartz tools. Edit the public `CV` template in `scripts/selective_export.py` to customize future exports.
+Edit repository-root `cv.md` to update the public CV. It is the persistent, authoritative source; each export reads its latest contents and never overwrites it. Never edit generated `content/index.md` or `index.html`. Re-export, rebuild and review locally; publishing remains a separate step, so editing alone does not immediately update the live site. A missing or unsafe CV source stops export, and a changed source requires re-export before building.
+
+The exporter generates the CV at `content/index.md` and the app-owned Notes landing at `content/notes/index.md`, with integrity hashes in the publication manifest. These pages do not count as selected user notes. Notes still require the exact top-level YAML boolean `publish: true`; selection does not automatically publish them. `add_demo.py` updates only the Notes landing and synthetic demos. Shared top navigation appears on all generated pages; Notes, demos and lists retain Quartz tools.
 
 Run `TEST_SCRATCH=/absolute/task/path/private-fixtures python3 tests/test_cv_notes.py` for the real build routing/navigation persistence regression. Preview startup is a separate approval step; the commands above are reference commands, not authorization to bind a socket.
 

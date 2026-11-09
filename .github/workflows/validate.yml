@@ -27,6 +27,8 @@ jobs:
           mkdir -p "$TEST_SCRATCH"
           python tests/test_selective_export.py
           python tests/test_preview_routes.py
+          python tests/test_cv_source.py
+          python tests/test_stage_paths.py
           python tests/test_cv_notes.py
           python tests/real_build_acceptance.py
       - run: python scripts/check_stage.py content

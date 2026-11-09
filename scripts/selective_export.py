@@ -13,21 +13,18 @@ def mapping(loader,node,deep=False):
   result[k]=loader.construct_object(value,deep=deep)
  return result
 UniqueLoader.add_constructor(yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG,mapping)
-CV='''---
-title: Shulva
----
-## Education
-
-_To be added._
-
-## Research
-
-_To be added._
-
-## Publications
-
-_To be added._
-'''
+CV_SOURCE=pathlib.Path(__file__).resolve().parents[1]/'cv.md'
+def read_cv():
+ # Check the lexical path before resolving: no symlink source or ancestor.
+ path=CV_SOURCE.absolute()
+ try:
+  if any(p.is_symlink() for p in (path,*path.parents)) or not path.is_file():
+   fail('E_CV: missing or unsafe repository-root cv.md')
+  data=path.read_bytes()
+  data.decode('utf-8')
+  return data
+ except ExportError:raise
+ except Exception:fail('E_CV: missing or unsafe repository-root cv.md')
 LANDING='''---
 title: Shulva · 知识花园
 ---
@@ -108,6 +105,7 @@ def export(vault,output,dry_run=False):
   if not dry_run:shutil.rmtree(output)
  notes={};selected={};assets={};rendered={}
  try:
+  cv=read_cv()
   for root,dirs,files in os.walk(vault,followlinks=False):
    dirs[:]=[d for d in dirs if not d.startswith('.') and d not in ('node_modules','config','secrets') and not (pathlib.Path(root)/d).is_symlink()]
    for name in files:
@@ -189,8 +187,8 @@ def export(vault,output,dry_run=False):
    rendered['notes/'+current]='---\ntitle: '+json.dumps(pathlib.PurePosixPath(current).stem,ensure_ascii=False)+'\n---\n'+''.join(pieces)
   landing=LANDING if not selected else LANDING.replace('当前没有选中的用户笔记',f'当前明确选中了 {len(selected)} 篇用户笔记')
   if 'notes/index.md' in rendered:fail('E_ROUTE: selected note conflicts with app-owned landing')
-  payload={'index.md':CV,'notes/index.md':landing,**rendered,**assets}
-  receipt={'schema':'shulva-selective-v1','selected_notes':len(selected),'selected_assets':len(assets),'default_private':True,'files':{name:hashlib.sha256(data.encode() if isinstance(data,str) else data).hexdigest() for name,data in payload.items()}}
+  payload={'index.md':cv,'notes/index.md':landing,**rendered,**assets}
+  receipt={'cv_source':{'mode':'repository-root-cv-v1','sha256':hashlib.sha256(cv).hexdigest()},'schema':'shulva-selective-v1','selected_notes':len(selected),'selected_assets':len(assets),'default_private':True,'files':{name:hashlib.sha256(data.encode() if isinstance(data,str) else data).hexdigest() for name,data in payload.items()}}
   if not dry_run:
    output.mkdir(parents=True,exist_ok=False)
    for name,data in payload.items():
